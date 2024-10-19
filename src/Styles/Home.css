@@ -1,0 +1,34 @@
+.mainpage {
+    position: relative; /* Allows the ::after element to be positioned correctly */
+    background-image: url("../assets/pexels-tbee-14592-82256.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; 
+    width: 100%; 
+    padding: 0; 
+    margin: 0; 
+    z-index: 1; /* Keeps the content above the overlay */
+    overflow: hidden;
+}
+
+/* Add an overlay with reduced opacity */
+.mainpage::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.5); 
+    z-index: -1; 
+}
+.title{
+    text-align: center;
+    font-size: 2rem;
+    padding: 60px;
+}
+.special{
+    color:#7d6608;
+    font-size: 2.1rem;
+}
